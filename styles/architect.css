@@ -7,6 +7,14 @@
   font-style: normal;
 }
 /* Shared Styles */
+.text-center{
+    text-align: center;
+}
+.section-desc{
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 535px;
+}
 .flex{
     display: flex;
 }
@@ -112,22 +120,194 @@ main > section{
     font-size: 3rem;
     font-weight: 700;
 }
-.feature-desc{
-    font-size: 1rem;
-    font-weight: 400;
-}
 .our-features{
     max-width: 535px;
 }
+/* Enjoying feature related style */
+.features{
+    gap: 120px;
+}
+.feature-image{
+    width: 100%;
+}
+.total-Feature-container{
+    max-width: 590px;
+}
+.feature-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #131313;
+    border-left: 8px solid #FF900E;
+    padding-left: 20px;
+    margin-bottom: 24px;
+}
+.feature-info{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+    margin-bottom: 30px;
+}
+.feature-card-container{
+    /* margin-top: 30px; */
+}
+.card{
+    padding: 30px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+.card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #131313; 
+    margin: 10px;
+}
+.card-desc{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+    margin: 10px;
+}
+.badge{
+    padding: 45px 50px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 8px;
+    background: #FF900E;
+    border: none;
+    color: #FFF;
+    margin-left: -80px;
+    margin-top: -100px;
+}
+#year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+/* Some fact related Style */
+.section-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #131313;
+    margin-bottom: 25px;
+}
+
+.fact-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    margin-top: 100px;
+    justify-items: center;
+}
+.fact{
+    width: 240px;
+    height: 240px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.fact-title{
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.fact-info{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #727272;
+    margin-top: 5px;
+    /* margin-bottom: 60px; */
+}
+/* Our sponsor */
+.sponsor-info{
+    max-width: 540px;
+    margin: 10px auto;
+}
+.sponsor-company{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    filter: grayscale(100%);
+    margin-top: 60px;
+}
+/* footer related styles */
+.last-line{
+    max-width: 1440px;
+    margin: 130px auto;
+    background: #FFF4E7;
+    border-radius: 8px;
+}
+.footer-info{
+    color: #424242;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 40px 40px;
+}
 /* Responsive Media Query */
 @media screen and (max-width : 576px) {
-    .navbar{
-        flex-direction: column;
-    }
-    .team-feature{
+    .navbar,
+    .team-feature,
+    .features{
         flex-direction: column;
     }
     .our-features{
         text-align: center;
+    }
+    .fact-container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 25px;
+        margin-top: 50px;
+    }
+    .section-title,
+    .section-desc{
+        text-align: center;
+    }
+    .sponsor-company{
+        grid-template-columns: repeat(1,1fr);
+        gap: 25px;
+        justify-items: center;
+    }
+    .badge{
+        margin-top: 20px;
+        margin-left: 85px;
+    }
+}
+/* For medium devices */
+@media screen and (min-width : 576px) and (max-width : 992px) {
+    .team-feature,
+    .features{
+        flex-direction: column;
+    }
+    .our-features,
+    .features{
+        text-align: center;
+    }
+    .fact-container
+    {
+        grid-template-columns: repeat(2,1fr);
+        gap: 25px;
+        margin-top: 50px;
+    }
+    .section-title,
+    .section-desc{
+        text-align: center;
+    }
+    .section-desc{
+        margin: 0px auto;
+    }
+    .sponsor-company{
+        grid-template-columns: repeat(2,1fr);
+        gap: 25px;
+        justify-items: center;
+    }
+    .total-Feature-container{
+    max-width: 100%
+    }
+    .badge{
+        margin: 0px auto;
+        margin-top: -100px;
     }
 }
