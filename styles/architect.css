@@ -37,7 +37,7 @@
     background-color: #FF900E;
     color:#FFF;
     padding: 20px 25px;
-    font-size: 1,25rem;
+    font-size: 1.25rem;
     font-weight: 600;
     border-radius: 8px;
     border: none;
@@ -52,6 +52,11 @@ main > section{
 /* Hover Styles */
 .nav-link:hover{
     color: #FF900E;
+    transition: 0.2s;
+}
+.btn-primary:hover{
+    background-color: #E07F0D;
+    font-size: 1.25rem;
     transition: 0.2s;
 }
 /* header styles */
@@ -146,9 +151,6 @@ main > section{
     font-weight: 400;
     color: #727272;
     margin-bottom: 30px;
-}
-.feature-card-container{
-    /* margin-top: 30px; */
 }
 .card{
     padding: 30px;
